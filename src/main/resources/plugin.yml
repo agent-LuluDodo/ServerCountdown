@@ -1,0 +1,6 @@
+name: ServerCountdown
+version: '${project.version}'
+main: de.luludodo.servercountdown.ServerCountdown
+api-version: '1.20'
+authors: [agent_LuluDodo]
+description: A simple countdown for your server release!
