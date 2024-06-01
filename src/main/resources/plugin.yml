@@ -4,3 +4,12 @@ main: de.luludodo.servercountdown.ServerCountdown
 api-version: '1.20'
 authors: [agent_LuluDodo]
 description: A simple countdown for your server release!
+commands:
+  sc:
+    description: Used to start or reload ServerCountdown
+    usage: /<command> <start|reload> <for|until><[config|plugin]> <time(dd:HH:mm:ss)|date(dd.MM.yyyy HH:mm:ss)><[]>
+    aliases:
+      - servercountdown
+  open:
+    description: Opens the server immediately
+    usage: /<command>

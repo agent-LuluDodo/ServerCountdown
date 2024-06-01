@@ -1,0 +1,126 @@
+# Server Countdown v1.0
+# by agent_LuluDodo
+# Color Codes are supported using '§'
+
+# The Time the server opens at in the format "dd.MM.yyyy HH:mm:ss"
+# Default: "01.01.1970 00:00:00"
+ClosedUntil: "01.01.1970 00:00:00"
+
+# Prefix for chat messages
+# Default: "[§bServer§3Countdown§r] "
+Prefix: "[§bServer§3Countdown§r] "
+
+# MESSAGES
+# The message send when the Player tries to join when the server is closed
+# Defaults: "§4The Server is Closed!\n\n§cIt opens in §6%time%§c!", "%player% tried logging in but the Server is still closed"
+# For newlines use \n
+# Time until the Server opens: %time%
+# The players name: %player%
+KickMsg: "§4The Server is Closed!\n\n§cIt opens in §6%time%§c!"
+ConsoleKickMsg: "%player% tried logging in but the Server is still closed!"
+# Unknown Error Message
+# For newlines use \n
+# Defaults: "§4An Error has occurred: %err%!", "An Error has occurred: %err%"
+# The Error message: %err%
+ErrorMsg: "§4An Error has occurred\n\n§c%err%!"
+ConsoleErrorMsg: "An Error has occurred: %err%"
+# Message send if the command had an invalid amount of arguments
+# Default: "§cYou entered an invalid amount of arguments!"
+InvalidAmountArgsMsg: "§cYou entered an invalid amount of arguments!"
+# Message send if the command had an invalid arguments
+# Default: "§cThe argument \"%arg%\" is invalid!"
+# The Argument which was wrong: %arg%
+InvalidArgMsg: "§cThe argument \"%arg%\" is invalid!"
+# Message send if the sender has no permission to execute the command!
+# Default: "§cYou don't have permission to use this Command (missing: %permission%)!"
+# The permission which is missing: %permission%
+NoPermissionMsg: "§cYou don't have permission to use this Command (missing: %permission%)!"
+# Message send on reload
+# Default "§aReloading Config!"
+ReloadMsg: "§aReloading Config!"
+# Message send when Date to open on gets Changed
+# Default: "§aClosing Server until §6%date%§a!", "Closing Server until %date%"
+# The date: %date%
+DateMsg: "§aClosing Server until §6%date%§a!"
+ConsoleDateMsg: "Closing Server until %date%"
+# Send when /open is used
+# Default: "§aOpened Server!", "Opened Server"
+OpenMsg: "§aOpened Server!"
+ConsoleOpenMsg: "Opened Server"
+
+# Suffixes for Days,Hours,etc.
+# Format:
+# Suffix:
+#  - "Singular"
+#  - "Plural"
+DecadeSuffix:
+  - " Decade"
+  - " Decades"
+YearSuffix:
+  - " Year"
+  - " Years"
+WeekSuffix:
+  - " Week"
+  - " Weeks"
+DaySuffix:
+  - " Day"
+  - " Days"
+HourSuffix:
+  - " Hour"
+  - " Hours"
+MinuteSuffix:
+  - " Minute"
+  - " Minutes"
+SecondSuffix:
+  - " Second"
+  - " Seconds"
+MillisecondSuffix:
+  - " Millisecond"
+  - " Milliseconds"
+
+# Separates values
+# Default: " "
+Separator: " "
+
+# What gets displayed if that is left (only active values)
+# Values: decade, year, week, day, hour, minute, second, millisecond
+# Format:
+# Left:
+#  - "display-one"
+#  - "display-two"
+#  - "etc."
+DecadeLeft:
+  - "decade"
+  - "year"
+  - "month"
+YearLeft:
+  - "year"
+  - "day"
+WeekLeft:
+  - "week"
+  - "day"
+DayLeft:
+  - "day"
+  - "hour"
+HourLeft:
+  - "hour"
+  - "minute"
+MinuteLeft:
+  - "minute"
+  - "second"
+SecondLeft:
+  - "second"
+MillisecondLeft:
+  - "millisecond"
+
+
+# Active Suffixes
+# Values: decade, year, week, day, hour, minute, second, millisecond
+# Default: year, day, hour, minute, second
+Active:
+  - "year"
+  - "day"
+  - "hour"
+  - "minute"
+  - "second"
+  - "millisecond"
